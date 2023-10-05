@@ -21,7 +21,7 @@ public class Context {
    }
    
    public int executeInRangeStrategy(int num1, int num2){
-       Computer chainOfStrategies = new OperationAdd(new OperationSubstract(new OperationMultiply()));
+       Computer chainOfStrategies = new OperationAdd(new OperationSubstract(new OperationMultiply(new OperationDevide(new OperationPower()))));
       return chainOfStrategies.computeInRange(num1, num2);
    }
 }

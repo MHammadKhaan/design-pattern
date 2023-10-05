@@ -22,10 +22,13 @@ public class StrategyPatternMain {
       
       System.out.println("Using Strategy with Chain of Responsibility ...");
       System.out.println("Computer in Range 44 , 44 = "+context.executeInRangeStrategy(44, 44));
-      context.executeInRangeStrategy(44, 144);
+      ;
+       System.out.println("Out of range"+context.executeInRangeStrategy(44, 144));
+       System.out.println("Computer in range 120 , 150 ="+ context.executeInRangeStrategy(150, 120));
+       System.out.println("Out of range "+context.executeInRangeStrategy(120, 1250));
+       System.out.println(" computer in range 500/1000 = "+context.executeInRangeStrategy(1000, 1500));
+       System.out.println("5000 Power 2 ="+context.executeInRangeStrategy(5000, 5000));
       
-      context.executeInRangeStrategy(120, 150);
-      context.executeInRangeStrategy(120, 1250);
       
    }
 }

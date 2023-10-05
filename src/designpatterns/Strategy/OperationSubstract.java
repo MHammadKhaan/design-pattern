@@ -27,7 +27,7 @@ public class OperationSubstract extends Computer{
 
     @Override
     public int computeInRange(int num1, int num2) {
-        if(num1 >= 100 && num1 <= 1000 && num2 >= 100 && num2 <= 1000 )
+        if(num1 >= 100 && num1 <= 500 && num2 >= 100 && num2 <= 500 )
             return num1 - num2;
         if(nextComputer != null)
             return nextComputer.computeInRange(num1, num2);
