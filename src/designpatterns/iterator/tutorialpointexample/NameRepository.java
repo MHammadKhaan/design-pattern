@@ -1,7 +1,7 @@
 package designpatterns.iterator.tutorialpointexample;
 
 public class NameRepository implements Container {
-    public String names[] = {"Hammad" , "Kashan" ,"Shaniii" , "Babluu"};
+    public String names[] = {"ashar", "awais", "hammad", "hozefa"};
 
     @Override
     public Iterator getIterator() {
@@ -14,18 +14,26 @@ public class NameRepository implements Container {
 
         @Override
         public boolean hasNext() {
-
-            if(index < names.length){
-                return true;
-            }
-            return false;
+            return index < names.length;
         }
 
         @Override
         public Object next() {
-
-            if(this.hasNext()){
+            if (this.hasNext()) {
                 return names[index++];
+            }
+            return null;
+        }
+
+        @Override
+        public boolean hasPrevious() {
+            return index > 0;
+        }
+
+        @Override
+        public Object previous() {
+            if (this.hasPrevious()) {
+                return names[--index];
             }
             return null;
         }
