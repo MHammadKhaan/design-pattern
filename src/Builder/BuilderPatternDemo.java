@@ -22,6 +22,7 @@ public class BuilderPatternDemo {
       System.out.println("Select your meal type:");
       System.out.println("1. Veg Meal");
       System.out.println("2. Non-Veg Meal");
+      System.out.println("3. Custom Tea");
 
       int choice = scanner.nextInt();
 
@@ -39,7 +40,15 @@ public class BuilderPatternDemo {
             includeDiet = scanner.nextBoolean();
             meal = mealBuilder.prepareNonVegMeal(includeDiet);
             break;
-
+            case 3:
+            System.out.println("Select sweetness type \n 1:Regular\n 2:Extra Sweet):");
+            int sweetnessType = scanner.nextInt();
+            System.out.println("Add cream? \n1:true\n2:false)");
+            int cream = scanner.nextInt();
+            System.out.println("Enter sweetness spoons:");
+            int sweetnessSpoons = scanner.nextInt();
+            meal = mealBuilder.prepareCustomTea(sweetnessType, cream, sweetnessSpoons);
+            break;
          default:
             System.out.println("Invalid choice. Exiting.");
             scanner.close();

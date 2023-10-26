@@ -11,25 +11,31 @@ package Builder;
  */
 public class MealBuilder {
 
-   public Meal prepareVegMeal (boolean includeDiet){
-      Meal meal = new Meal();
-      meal.addItem(new VegBurger());
-       if (includeDiet) {
-      meal.addItem(new DietCoke());
-   } else {
-      meal.addItem(new Coke());
-   }
-   return meal;
-}   
+    public Meal prepareVegMeal(boolean includeDiet) {
+        Meal meal = new Meal();
+        meal.addItem(new VegBurger());
+        if (includeDiet) {
+            meal.addItem(new DietCoke());
+        } else {
+            meal.addItem(new Coke());
+        }
+        return meal;
+    }
 
-   public Meal prepareNonVegMeal (boolean includeDiet){
-      Meal meal = new Meal();
-      meal.addItem(new ChickenBurger());
-       if (includeDiet) {
-      meal.addItem(new DietPepsi());
-   } else {
-      meal.addItem(new Pepsi());
-   }
-   return meal;
-}
+    public Meal prepareNonVegMeal(boolean includeDiet) {
+        Meal meal = new Meal();
+        meal.addItem(new ChickenBurger());
+        if (includeDiet) {
+            meal.addItem(new DietPepsi());
+        } else {
+            meal.addItem(new Pepsi());
+        }
+        return meal;
+    }
+
+    public Meal prepareCustomTea(int sweetnessType, int cream, int sweetnessSpoons) {
+        Meal meal = new Meal();
+        meal.addItem(new Tea(sweetnessType, cream, sweetnessSpoons));
+        return meal;
+    }
 }
