@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
+
 package Momento;
 
 /**
@@ -28,6 +26,9 @@ public class Demo {
                         new Dot(240, 360, Color.GREEN),
                         new Dot(360, 360, Color.GREEN),
                         new Dot(360, 240, Color.GREEN)
+                ),
+                new CompoundShape(
+                        new Line(400, 400, 500, 500, Color.MAGENTA)
                 )
         );
     }
