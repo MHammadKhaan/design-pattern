@@ -2,6 +2,32 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/Z:/design-pattern/src/Momento/Editor.java</file>
+            <file>file:/Z:/design-pattern/src/Interpreter/InterpreterPatternDemo.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/Demo.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/Dot.java</file>
+            <file>file:/Z:/design-pattern/src/Interpreter/DaughterExpression.java</file>
+            <file>file:/Z:/design-pattern/src/Interpreter/SonExpression.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/History.java</file>
+            <file>file:/Z:/design-pattern/src/Interpreter/AndExpression.java</file>
+            <file>file:/Z:/design-pattern/src/Interpreter/Expression.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/Circle.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/CompoundShape.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/Rectangle.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/Shape.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/MoveCommand.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/ColorCommand.java</file>
+            <file>file:/Z:/design-pattern/src/Interpreter/TerminalExpression.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/Command.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/Canvas.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/BaseShape.java</file>
+            <file>file:/Z:/design-pattern/src/Interpreter/OrExpression.java</file>
+            <file>file:/Z:/design-pattern/src/Momento/Memento.java</file>
+        </group>
+>>>>>>> 29c3aa0ae47e6bdd95443b4f28460b79890c008c
     </open-files>
 </project-private>
